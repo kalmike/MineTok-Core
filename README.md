@@ -120,6 +120,14 @@ Contact : https://t.me/SoraDv
 
 # Installation ##
 
+Clone this by
+
+```
+gh repo clone MineTokNetwork/MineTok-Core
+```
+
+Install Plugin All below
+
 ```
 sudo apt install -y software-properties-common net-tools build-essential >/dev/null 2>&1
 echo -e "Installing required packages, it may take some time to finish.${NC}"
