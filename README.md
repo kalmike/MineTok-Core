@@ -87,20 +87,35 @@ listed nodes developement tags(builder/nametag_install.sh).
 # Specification ##
 
 Name : MineTok
+
 Ticker : MTK
+
 Supply : 1.500.000 MTK
+
 Pre-Sale : 100.000 MTK
+
 Bountry And Reward : 50.000 MTK
+
 AirDrop : 1.000 MTK
+
 ICO : Not Yet
+
 PoW : 50k Blocks
+
 PoS : More than 50k Blocks
+
 Block Reward : 0.001
+
 Masternode : Enable
+
 Masternode Collateral : 1.000 MTK
+
 SuperNode : Enable
+
 DEX : Soon
+
 PEG : Diamond Price Real
+
 Contact : https://t.me/SoraDv
 
 # DEVELOPMENT TAGS ##
