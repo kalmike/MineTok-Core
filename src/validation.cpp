@@ -812,6 +812,12 @@ CAmount GetBlockValue(int nHeight)
         return Params().GetConsensus().Premine * COIN;
     } else if (nHeight > 5) {
         return 0.01 * COIN;
+    } else if (nHeight > 2000) {
+        return 1 * COIN;
+    } else if (nHeight > 300000) {
+        return 0.1 * COIN;
+    } else if (nHeight > 1000000) {
+        return 0.01 * COIN;
     }
     // Testnet high-inflation blocks [2, 200] with value 250k MUB
     const bool isTestnet = Params().IsTestnet();

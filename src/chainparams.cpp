@@ -83,7 +83,7 @@ static CBlock CreateGenesisBlock(uint32_t nTime, uint32_t nNonce, uint32_t nBits
 /* start of checkpoint 7 Network */
 static MapCheckpoints mapCheckpoints = {
     { 0,   uint256S("f115ea61f4b1c6dd5071634ee64f0590bf31a902e8b01e2d0f7a26d5311ee756")},   //first checkpoint
-    //{ 1,   uint256S("00000759fe3f5229a4afa9be6b8c1b2d899dd493404b7d3ccf7246ce5d2f5a15")},   //checkpoint updates for change key from cxau to rci
+    { 100,   uint256S("0000000ffd3adf0d93245a433237efab275d1cd7bbdb311652a4b784e020bd57")},   //checkpoint updates for change key from cxau to rci
     //{ 10000, uint256S("fac671368be6e30b3d9ea2ba557236159dfe4e0bd5ff46ffcc2022ea5f159a94")},   //updates of blockchain core
 };
 
@@ -161,8 +161,8 @@ public:
         consensus.vUpgrades[Consensus::UPGRADE_TESTDUMMY].nActivationHeight =
                 Consensus::NetworkUpgrade::NO_ACTIVATION_HEIGHT;
         consensus.vUpgrades[Consensus::UPGRADE_HYBRID].nActivationHeight        = 100;
-        consensus.vUpgrades[Consensus::UPGRADE_POS].nActivationHeight           = 50000;
-        consensus.vUpgrades[Consensus::UPGRADE_POS_V2].nActivationHeight        = 150000;
+        consensus.vUpgrades[Consensus::UPGRADE_POS].nActivationHeight           = 500000;
+        consensus.vUpgrades[Consensus::UPGRADE_POS_V2].nActivationHeight        = 1000000;
         consensus.vUpgrades[Consensus::UPGRADE_BIP65].nActivationHeight         = 1500000;
         consensus.vUpgrades[Consensus::UPGRADE_V2].nActivationHeight            = 2000000;
         consensus.vUpgrades[Consensus::UPGRADE_V3].nActivationHeight            = 2500000;
