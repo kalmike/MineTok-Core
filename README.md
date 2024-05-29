@@ -118,6 +118,44 @@ PEG : Diamond Price Real
 
 Contact : https://t.me/SoraDv
 
+# Installation ##
+
+Clone this by
+
+```
+gh repo clone MineTokNetwork/MineTok-Core
+```
+
+Install Plugin All below
+
+```
+sudo apt install -y software-properties-common net-tools build-essential >/dev/null 2>&1
+echo -e "Installing required packages, it may take some time to finish.${NC}"
+sudo apt install -y -o Dpkg::Options::="--force-confdef" -o Dpkg::Options::="--force-confold" git ufw curl >/dev/null 2>&1
+sudo apt install -y -o Dpkg::Options::="--force-confdef" -o Dpkg::Options::="--force-confold" libtool autotools-dev autoconf pkg-config automake libssl-dev libgmp-dev libboost-all-dev >/dev/null 2>&1
+sudo apt install -y -o Dpkg::Options::="--force-confdef" -o Dpkg::Options::="--force-confold" libminiupnpc-dev libzmq3-dev qtbase5-dev qttools5-dev qttools5-dev-tools libqt5charts5-dev libqt5svg5-dev libprotobuf-dev protobuf-compiler libqrencode-dev >/dev/null 2>&1
+sudo apt install -y -o Dpkg::Options::="--force-confdef" -o Dpkg::Options::="--force-confold" cargo libsodium-dev >/dev/null 2>&1
+#libevent
+git clone https://github.com/libevent/libevent
+cd libevent
+./autogen.sh && ./configure && sudo make install && cd ~
+#libzmq
+git clone https://github.com/zeromq/libzmq
+cd libzmq
+./autogen.sh && ./configure && sudo make install && cd ~
+#db
+sudo apt install libdb-dev libdb++-dev -y
+```
+
+Then Running this
+
+```
+#chmod
+chmod 755 -R share/genbuild.sh && chmod 755 -R depends/config.guess && chmod 755 -R depends/config.sub
+#main
+./mubdi.sh && ./configure --enable-cxx --with-incompatible-bdb --disable-tests --without-gui --enable-mining-rpc && make && sudo make install
+```
+
 # DEVELOPMENT TAGS ##
 
 tags is list for easy what we change. so make sure that arrange.
