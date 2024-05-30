@@ -156,6 +156,20 @@ chmod 755 -R share/genbuild.sh && chmod 755 -R depends/config.guess && chmod 755
 ./mubdi.sh && ./configure --enable-cxx --with-incompatible-bdb --disable-tests --without-gui --enable-mining-rpc && make && sudo make install
 ```
 
+# HOW TO MINE ##
+
+Running Terminal/Console/CMD
+
+```
+mtkd -daemon
+mtk-cli setgenerate true
+```
+
+Running QT
+
+- Go to settings > console
+- wrote same setgenerate true
+
 # DEVELOPMENT TAGS ##
 
 tags is list for easy what we change. so make sure that arrange.
