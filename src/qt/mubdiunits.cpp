@@ -213,7 +213,7 @@ QString MuBdIUnits::formatWithUnit(int unit, const CAmount& amount, bool plussig
 
 QString MuBdIUnits::formatWithRLF(int unit, const CAmount& amount, bool plussign, SeparatorStyle separators)
 {
-        return format(unit, amount, plussign, separators) + QString(" GOLD");
+        return format(unit, amount, plussign, separators) + QString(" Gr");
 }
 
 QString MuBdIUnits::formatHtmlWithUnit(int unit, const CAmount& amount, bool plussign, SeparatorStyle separators)

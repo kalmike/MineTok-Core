@@ -35,7 +35,7 @@ void BalanceBubble::updateValues(int64_t nTransparentBalance, int unit)
 {
     QString valueTrans = MuBdIUnits::formatWithUnit(unit, nTransparentBalance, false, MuBdIUnits::separatorAlways);
     valueTrans = valueTrans.replace(QChar(THIN_SP_CP), QString(","));
-    QString valueShield = MuBdIUnits::formatWithRLF(unit, nTransparentBalance * 5000, false, MuBdIUnits::separatorAlways);
+    QString valueShield = MuBdIUnits::formatWithRLF(unit, nTransparentBalance, false, MuBdIUnits::separatorAlways);
     valueShield = valueShield.replace(QChar(THIN_SP_CP), QString(","));
 
     ui->textTransparent->setText(valueTrans);

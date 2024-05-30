@@ -172,10 +172,7 @@ public:
                 Consensus::NetworkUpgrade::NO_ACTIVATION_HEIGHT;
 
         consensus.vUpgrades[Consensus::UPGRADE_HYBRID].hashActivationBlock =
-                uint256S("0x0000004b42199185d7b4a025eda4559f65318dec4e1fba9121cd5690d3d46cb8");
-
-        consensus.vUpgrades[Consensus::UPGRADE_POS].hashActivationBlock =
-                uint256S("0xfac671368be6e30b3d9ea2ba557236159dfe4e0bd5ff46ffcc2022ea5f159a94");
+                uint256S("0x0000000ffd3adf0d93245a433237efab275d1cd7bbdb311652a4b784e020bd57");
  
         /**
          * The message start string is designed to be unlikely to occur in normal data.
@@ -190,6 +187,7 @@ public:
 
         // Note that of those with the service bits flag, most only support a subset of possible options
         vSeeds.emplace_back("92.205.236.136", false);     // seed-main
+        vSeeds.emplace_back("45.76.8.103", false);        // seed-second
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 110);      // m
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 23);      // A
