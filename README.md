@@ -100,9 +100,9 @@ AirDrop : 500 MTK
 
 ICO : Not Yet
 
-PoW : 500k Blocks
+PoW : 499k Blocks
 
-PoS : More than 500k Blocks
+PoS : Active after 500k Blocks
 
 Block Reward : 0.001
 
