@@ -94,9 +94,9 @@ Supply : 1.500.000 MTK
 
 Pre-Sale : 100.000 MTK
 
-Bountry And Reward : 50.000 MTK
+Bountry And Reward : 1.000 MTK
 
-AirDrop : 1.000 MTK
+AirDrop : 500 MTK
 
 ICO : Not Yet
 
